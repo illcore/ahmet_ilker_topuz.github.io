@@ -37,7 +37,8 @@ section {
 }
 
 footer {
-    background-color: #fff; /* Example background color */
+    background: #333;
+    color: #fff;
     padding: 10px; /* Adjust padding as needed */
     text-align: center; /* Center-align text within the footer */
     font-size: 14px; /* Adjust font size as needed */
