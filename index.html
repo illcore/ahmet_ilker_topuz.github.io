@@ -3,153 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ahmet Ilker Topuz - Personal Website</title>
+    <title>Ahmet Ilker Topuz - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Particle banner styling */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 250px; /* Adjust the height as needed */
+            background: #1a1a2e;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            z-index: 1;
+        }
+
+        #particleCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        /* Overlay text styling */
+        .banner-text {
+            font-size: 2.5em;
+            z-index: 1;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Ahmet Ilker Topuz</h1>
-        <nav>
-            <ul>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#journalpapers">Journal papers</a></li>
-                <li><a href="#proceedings">Proceedings</a></li>
-                <li><a href="#posters">Posters</a></li>
-                <li><a href="#proceedings">Proceedings</a></li>
-                <li><a href="#selectedpre-prints">Selected pre-prints</a></li>
-                <li><a href="#internalnote">Internal note</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Particle Banner -->
+    <header class="banner">
+        <canvas id="particleCanvas"></canvas>
+        <div class="banner-text">Ahmet Ilker Topuz</div>
     </header>
 
-    <section id="summary">
-        <h2>Summary</h2>
-        <p><br>Computational aspects of radiation - matter interaction including:
-        <br><br>    
-        <br>* Radiation physics: Particle transport, source definition/setup, particle detectors, muon tomography, space applications, and shielding/dosimetry;
-        <br><br>    
-        <br>* Computational methods: Monte Carlo simulations, probabilistic approaches, and statistical/deterministic numerical methods.</p>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#journalpapers">Journal papers</a></li>
+            <li><a href="#proceedings">Proceedings</a></li>
+            <li><a href="#posters">Posters</a></li>
+            <li><a href="#selectedpre-prints">Selected pre-prints</a></li>
+            <li><a href="#internalnote">Internal note</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div>
-         <br>02/2024 - 08/2024 Postdoctoral fellow - MAHE/MCNS, India
-         <br>10/2022 - 08/2023 Junior research fellow in physics - University of Tartu, Estonia
-         <br>11/2021 - 04/2022 Researcher - SilentBorder/University of Tartu, Estonia
-         <br>02/2016 - 07/2020 Editorial staff - VGSworld, Turkey
-         <br>09/2011 - 01/2015 Researcher - M2i, Netherlands
-         <br>06/2010 - 08/2010 Summer Student Programme - CERN, Switzerland  
-        </div>
-    </section>
+    <!-- Rest of your sections follow here -->
 
-    <section id="education">
-        <h2>Education</h2>
-        <div> 
-        <br><b>2023 University of Tartu</b>
-        <br>PhD in Physics
-        <br>Dissertation:<a href="https://dspace.ut.ee/handle/10062/89950">Quantitative and qualitative investigations for muon scattering tomography via GEANT4 simulations: A computational study</a>
-        <br><br> 
-        <br><b>2019 Canakkale 18 Mart University</b>
-        <br>Pedagogical formation in Physics
-        <br><br>
-        <br><b>2010 Istanbul Technical University</b>
-        <br>Master of Science in Nuclear Energy
-        <br>Dissertation: Cubic nodal expansion method for the radial solution of the neutron diffusion equation in cylindrical geometry.
-        <br><br>
-        <br><b>2006 Isik University</b>
-        <br>Bachelor of Science in Physics
-        <br><br>
-        <br><b>2001 Lycee Saint-Benoit d'Istanbul</b>
-        <br>High School
-        </div>
-    </section>
-    
-    <section id="journalpapers">
-        <h2>Journal papers</h2>
-        <div>
-         <br><b>A. I. Topuz</b>, Effect of hydrogen on albedo neutrons in lunar surface: A computational investigation by means of GEANT4 simulations, London Journal of Physics, 2024, Link:<a href="https://londonjphysics.org/index.php/ljp/article/view/10901/7869">10.69710/ljp.v1i2.10901</a>   
-         <br><br>        
-         <br><b>A. I. Topuz</b>, A multi-particle generation scheme through energy discretization in GEANT4 simulations for atmospheric applications, London Journal of Physics, 2024, Link:<a href="https://londonjphysics.org/index.php/ljp/article/view/10823/7755">10.69710/ljp.v1i2.10823</a>
-         <br><br>        
-         <br><b>A. I. Topuz</b>, COME: Cylindrical oriented muon emission in GEANT4 simulations, London Journal of Physics, 2024, Link:<a href="https://londonjphysics.org/index.php/ljp/article/view/10085/7407">10.69710/ljp.v1i1.10085</a>
-         <br><br>    
-         <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, Particle generation through energy discretization and restrictive planes in GEANT4 simulations for potential applications of cosmic ray muon tomography, Journal of Physics: Conference Series, 2023, Link:<a href="https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012150">10.1088/1742-6596/2438/1/012150</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, Non-destructive interrogation of nuclear waste barrels through muon tomography: A Monte Carlo study based on dual-parameter analysis via GEANT4 simulations, Journal of Instrumentation, 2022, Link:<a href="https://iopscience.iop.org/article/10.1088/1748-0221/17/12/P12005">10.1088/1748-0221/17/12/P12005</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, DOME: Discrete oriented muon emission in GEANT4 simulations, Instruments, 2022, Link:<a href="https://www.mdpi.com/2410-390X/6/3/42">10.3390/instruments6030042</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, M. Magi, Unveiling triangular correlation of angular deviation in muon scattering tomography by means of GEANT4 simulations, Journal of Advanced Instrumentation in Science, 2022, Link:<a href="http://journals.andromedapublisher.com/index.php/JAIS/article/view/247">10.31526/jais.2022</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, M. Magi, Effect of passive metallic layers on muon energy estimation by means of deflection angle for muon scattering tomography: A comparative study based on GEANT4 simulations, Journal of Instrumentation, 2022, Link:<a href="https://iopscience.iop.org/article/10.1088/1748-0221/17/02/C02008">10.1088/1748-0221/17/02/C02008</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, M. Magi, Investigation of deflection angle for muon energy classification in muon scattering tomography via GEANT4 simulations, Journal of Physics: Conference Series, 2022, Link:<a href="https://iopscience.iop.org/article/10.1088/1742-6596/2374/1/012185">10.1088/1742-6596/2374/1/012185</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, Enabling microstructural changes of FCC/BCC alloys in 2D dislocation dynamics, Material Science and Engineering: A, 2015, Link:<a href="https://www.sciencedirect.com/science/article/pii/S0921509315000301?via%3Dihub">10.1016/j.msea.2015.01.016</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, Dimension reduction of defect properties for application in 2D dislocation dynamics, Computational Material Science, 2014, Link:<a href="https://www.sciencedirect.com/science/article/pii/S0927025614004601?via%3Dihub">10.1016/j.commatsci.2014.06.049</a>
-        </div>
-    </section>
-    
-    <section id="proceedings">
-        <h2>Proceedings</h2>
-        <div>
-         <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, M. Magi, On muon energy group structure based on deflection angle for application in muon scattering tomography: A Monte Carlo study through GEANT4 simulations, RAP Proceedings 2021, 2021, Link:<a href="https://www.rap-proceedings.org/paper.php?id=68">10.37392/RapProc.2021.06</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, I. A. Reyhancan, 3D Surface Radiation Dosimetry of a Nuclear-Chicago NH3 Neutron Howitzer, AMNT2018, 2018, Link:<a href="https://arxiv.org/pdf/1806.02387">10.48550/arXiv.1806.02387</a>
-         <br><br> 
-         <br><b>A. I. Topuz</b>, I. A. Reyhancan, Neutronic Analysis of a Nuclear-Chicago NH3 Neutron Howitzer, AMNT2018, 2018, Link:<a href="https://arxiv.org/pdf/1806.05255">10.48550/arXiv.1806.05255</a>
-        </div>
-    </section>
+    <script>
+        const canvas = document.getElementById("particleCanvas");
+        const ctx = canvas.getContext("2d");
 
-    <section id="posters">
-        <h2>Posters</h2>
-        <div>
-        <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, On discrimination of nuclear waste barrels subject to in-drum mixing by muon scattering tomography: A characterization study based on GEANT4 simulations, ACS Spring 2022, March 21, 2022, Link:<a href="https://scimeetings.acs.org/exhibit/discrimination-nuclear-waste-barrels-subjectdrum/3648433">10.1021/scimeetings.2c00098</a> 
-        </div>
-    </section>
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = document.querySelector(".banner").offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
 
-    <section id="selectedpre-prints">
-        <h2>Selected pre-prints</h2>
-        <div>  
-         <br><b>A. I. Topuz</b>, Unveiling secondary particle generation in a SONTRAC detector through GEANT4 simulations, arXiv:2407.01616, 2024, Link:<a href="https://doi.org/10.48550/arXiv.2407.01616">arXiv.2407.01616</a>
-         <br><br>    
-         <br><b>A. I. Topuz</b>, P. Sreekumar, Thermal/epithermal neutron detection via LiO$_{2}$-doped fiber bundles: A computational study through GEANT4 simulations, arXiv:2406.15462, 2024, Link:<a href="https://doi.org/10.48550/arXiv.2406.15462">arXiv.2406.15462</a>
-         <br><br>       
-         <br><b>A. I. Topuz</b>, Implementation of atmospheric proton spectrum in GEANT4 simulations for space applications, arXiv:2310.03144, 2023, Link:<a href="https://doi.org/10.48550/arXiv.2310.03144">arXiv:2310.03144</a>
-         <br><br>       
-         <br><b>A. I. Topuz</b>, M. Kiisk, A. Giammanco, Preliminaries for muon tracking in GEANT4 simulations, ESS Open Archive, 2022, Link:<a href="https://doi.org/10.1002/essoar.10512190.1">essoar.10512190.1</a> 
-        </div>
-    </section>
+        const particles = [];
+        const numParticles = 100;
 
-    <section id="internalnote">
-        <h2>Internal note</h2>
-        <div>
-         <br>Analytical variation of opening angle and path length integral of horizontal and vertical diamond detector, CMS Internal Detector Note - ID Number: CMS DN-2010/015, 2010, CMS Beam and Radiation Monitoring Group
-        </div>
-    </section>
+        class Particle {
+            constructor() {
+                this.reset();
+            }
 
-    
-    <section id="skills">
-        <h2>Skills</h2>
-         <br><b>Language:</b> Turkish, English, French
-         <br><br> 
-         <br><b>Computer:</b> Linux, LaTeX, C, Python, Matplotlib, TikZ, QtiPlot, GEANT4, MCNP
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><b>Email:</b> <a href="mailto:aitopuz@protonmail.com">aitopuz@protonmail.com</a>, <a href="mailto:aitopuz@zohomail.eu">aitopuz@zohomail.eu</a></p>
-        <p><b>GitHub:</b> <a href="https://github.com/illcore">GitHub Profile</a></p>
-    </section>
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 4 + 1;
+                this.speedX = Math.random() * 2 - 1;
+                this.speedY = Math.random() * 2 - 1;
+            }
 
-    <footer>
-        <p><b>&copy; 2024 Ahmet Ilker Topuz. All rights reserved.</b></p>
-    </footer>   
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+                ctx.fill();
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+            }
+        }
+
+        function initParticles() {
+            for (let i = 0; i < numParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+        initParticles();
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+    </script>
 </body>
 </html>
